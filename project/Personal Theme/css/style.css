@@ -1,9 +1,19 @@
-/*============= RESETS =============*/
+/*============= RESETS ============= */
 
 /*-- iPhone X Remove Gutters --*/
-
+html {
+    padding: env(safe-area-insert);
+}
 /*-- Prevent Horizontal Scrolling & Font Style --*/
+html {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+}
 
+.text-nuno {
+    color: #1EBBA3;
+}
 /*--- Nav Scrolling Offset --*/
 
 /*--- Extra Bootstrap Column Padding --*/
