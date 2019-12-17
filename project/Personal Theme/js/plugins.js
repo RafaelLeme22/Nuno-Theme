@@ -14,10 +14,23 @@ $(document).ready(function () {
     $('.navbar-toggler').click(function () {
         $('nav.navbar').toggleClass('solid-toggle');
     })
-})
+});
 
 /*========== CLOSE MOBILE MENU ON CLICK & SMOOTH SCROLL TO LINK ==========*/
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    $('.navbar-toggler').addClass('collapsed');
+    $('#navbarResponsive').removeClass('show');
 
+    setTimeout(function () {
+        $('nav.navbar').toggleClass('solid-toggle');
+    }, 500);
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 2000);
+
+});
 
 /*========== BOUNCING DOWN ARROW ==========*/
 
