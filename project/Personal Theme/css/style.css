@@ -15,7 +15,12 @@ html {
     color: #1EBBA3;
 }
 /*--- Nav Scrolling Offset --*/
-
+.offset:before{
+    content: '';
+    height: 4rem;
+    display: block;
+    margin-top: -4rem;
+}
 /*--- Extra Bootstrap Column Padding --*/
 
 
