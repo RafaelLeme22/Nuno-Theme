@@ -23,15 +23,13 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     $('#navbarResponsive').removeClass('show');
 
     setTimeout(function () {
-        $('nav.navbar').toggleClass('solid-toggle');
-    }, 500);
+        $('nav.navbar').removeClass('solid-toggle');
+    }, 300);
 
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-    }, 2000);
-
+    }, 1000);
 });
-
 /*========== BOUNCING DOWN ARROW ==========*/
 $(document).ready(function () {
     $(window).scroll(function () {

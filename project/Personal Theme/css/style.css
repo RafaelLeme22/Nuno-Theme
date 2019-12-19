@@ -15,14 +15,16 @@ html {
     color: #1EBBA3;
 }
 /*--- Nav Scrolling Offset --*/
-.offset:before{
-    content: '';
-    height: 4rem;
-    display: block;
-    margin-top: -4rem;
+.offset:before {
+   content: "";
+   height: 4rem;
+   display: block;
+   margin-top: -4rem;
 }
 /*--- Extra Bootstrap Column Padding --*/
-
+[class*="col-"] {
+   padding: 1rem;
+}
 
 /*============= NAVIGATION =============*/
 .navbar-brand img {
@@ -186,6 +188,17 @@ h3.heading {
     width: 3rem;
     height: .2rem;
     background-color: #1EBBA3;
+}
+
+.feature span{
+    color: #1EBBA3;
+    margin-bottom: .6rem;
+}
+
+.feature h3{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding-bottom: .4rem;
 }
 
 /*===== FIXED BACKGROUND IMG DARK =====*/
