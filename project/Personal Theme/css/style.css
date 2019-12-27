@@ -106,7 +106,6 @@ button, a, a.btn{
     will-change: transform;
     /* this is used because iphone display gets in front of the image  */
     display: table;
-
 }
 /*-- Landing Page Caption --*/
 .caption {
@@ -204,7 +203,45 @@ h3.heading {
 /*===== FIXED BACKGROUND IMG DARK =====*/
 
 /*--- iOS Fixed Background Image --*/
+.fixed {
+    position: relative;
+    width: 100%;
+    display: table;
+}
 
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.fixed-dark {
+    background-image: url('../img/fixed/apple.jpg');
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /* this is used because iphone display gets in front of the image  */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+    /* this is used because iphone display gets in front of the image  */
+    display: table;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: table;
+}
+
+.dark{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7rem 0;
+}
 
 /*============= PORTFOLIO SECTION =============*/
 
