@@ -64,8 +64,6 @@ $(document).ready(function () { //when document(DOM) loads completely
     });
 });
 
-
-
 /*========== SKILLS COUNTER ==========*/
 $(document).ready(function () {
     $('.counter').counterUp({
@@ -76,7 +74,24 @@ $(document).ready(function () {
 })
 
 /*========== CLIENTS CAROUSEL ==========*/
-
+$(document).ready(function () { //when document(DOM) loads completely
+    $('#clients-carousel').owlCarousel({ //owlCarousel settings
+        autoplay: true, //set to false to turn off autoplay and only use nav
+        autoplayHoverPause: true, //set to false to prevent pausing on hover
+        loop: true, //set to false to stop carousel after all slides shown
+        autoplayTimeout: 5000, //time between transitions
+        smartSpeed: 1200, //transition speed
+        dotsSpeed: 1000, //transition speed when using dots/buttons
+        responsive: { //set number of items shown per screen width
+            0: {
+                items: 1 //0px width and up display 1 item
+            },
+            768: {
+                items: 2 //768px width and up display 2 items
+            }
+        }
+    });
+});
 
 /*========== TOP SCROLL BUTTON ==========*/
 
