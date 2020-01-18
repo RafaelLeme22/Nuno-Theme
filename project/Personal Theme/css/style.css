@@ -419,9 +419,38 @@ blockquote .svg-inline--fa {
     color: #1EBBA3;
 }
 
+.footer h3 {
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+}
+
 /*--- Contact Form --*/
+.form-group {
+    margin-bottom: 1.3rem;
+}
 
+.form-control {
+    background-color: #53596f;
+    border-radius: 0;
+    border: .15rem solid #666b71;
+    color: white !important;
+    font-size: 1.1rem;
+}
 
+.form-control:focus {
+    background-color: #53596f;
+    border: .15rem solid #666b71;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #b2b5b8 !important;
+}
+
+hr.socket {
+    border-top: .2rem solid #666b71;
+    width: 100%;
+}
 /*============= TOP SCROLL =============*/
 
 
