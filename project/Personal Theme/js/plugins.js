@@ -97,7 +97,11 @@ $(document).ready(function () { //when document(DOM) loads completely
 
 
 /*========== MAKE ALL ANIMATION "FADEINUP" ON MOBILE ==========*/
-
+$(document).ready(function () {
+    if ($(window).width() < 768) {
+        $('div').attr('data-animation', 'fadeInUp');
+    }
+});
 
 
 /*========== WAYPOINTS ANIMATION DELAY ==========*/
