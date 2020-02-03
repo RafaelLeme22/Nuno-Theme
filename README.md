@@ -19,7 +19,7 @@
 * **Rapido**: O site foi feito com imagens leves para que não necessite de muita internet 
 * **Dinâmico**: Foram utilizadas diversas animações e ferramentas para que o site mude conforme a utilização do usuário
 
-<details>
+<details open>
 <summary>📖 Tecnologias Usadas</summary>
 <ul>
   <li>HTML</li>
@@ -28,3 +28,4 @@
   <li>JavaScript</li>
   <li>JQuery</li>
 </ul>
+</details>
